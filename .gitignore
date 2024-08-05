@@ -1,0 +1,13 @@
+\.vs/
+*.ipa
+.idea/
+bin
+obj
+packages
+*.suo
+*.user
+_ReSharper.*
+.DS_Store
+appsettings.Development.json
+
+

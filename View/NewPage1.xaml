@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:AppShellSplitScreen.ViewModel"
+             x:Class="AppShellSplitScreen.View.NewPage1"
+             x:DataType="vm:NewPage1ViewModel"
+             Title="NewPage1">
+    <VerticalStackLayout Spacing="20">
+        <Label Text="{Binding Text}" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button Text="Navigate to NewPage2" Command="{Binding NavigateToNewPage2Command}" />
+        <Button Text="Update Static View" Command="{Binding UpdateStaticMessageCommand}" />
+    </VerticalStackLayout>
+</ContentPage>

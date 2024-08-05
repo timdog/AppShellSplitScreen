@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AppShellSplitScreen.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AppShellSplitScreen"
+    Title="AppShellSplitScreen"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent>
+        <ContentPage Shell.NavBarHasShadow="False">
+            <Grid RowDefinitions="*,*">
+                <!--
+                    As the app uses AppShell to navigate we override OnNavigating in the codebehind and
+                    render the pages in this ContentView.
+                -->
+                <ContentView x:Name="ContentArea" />
+                <!--
+                    This is the static view that will be shown in the bottom half of the screen.
+                -->
+                <ContentView Grid.Row="1" x:Name="StaticContentArea" />
+
+            </Grid>
+        </ContentPage>
+    </ShellContent>
+
+</Shell>
